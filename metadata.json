@@ -1,0 +1,7 @@
+{
+  "name": "Mthika Robot",
+  "description": "Automated forex trading bot platform featuring real-time market data, algorithmic strategy engines, risk management, live chart indicators, backtesting, and AI market signals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

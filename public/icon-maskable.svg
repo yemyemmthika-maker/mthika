@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="glowGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="accentGradM" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background for maskable cropping -->
+  <rect width="512" height="512" fill="url(#bgGradM)" />
+
+  <!-- Scaled content within the safe zone (scaled 0.78 centered at 256, 256) -->
+  <g transform="translate(56, 56) scale(0.78)">
+    <!-- Candlestick indicators in background -->
+    <g opacity="0.3">
+      <line x1="110" y1="180" x2="110" y2="340" stroke="#10b981" stroke-width="4" />
+      <rect x="98" y="210" width="24" height="80" rx="4" fill="#10b981" />
+      
+      <line x1="160" y1="140" x2="160" y2="380" stroke="#10b981" stroke-width="4" />
+      <rect x="148" y="180" width="24" height="130" rx="4" fill="#059669" />
+      
+      <line x1="352" y1="150" x2="352" y2="370" stroke="#10b981" stroke-width="4" />
+      <rect x="340" y="190" width="24" height="110" rx="4" fill="#10b981" />
+      
+      <line x1="402" y1="170" x2="402" y2="330" stroke="#10b981" stroke-width="4" />
+      <rect x="390" y="220" width="24" height="70" rx="4" fill="#059669" />
+    </g>
+
+    <!-- Robot Head Outline / Shield -->
+    <path d="M190 140 L322 140 L350 200 L350 320 L256 385 L162 320 L162 200 Z" 
+          fill="#09090b" 
+          stroke="url(#glowGradM)" 
+          stroke-width="12" 
+          stroke-linejoin="round" />
+
+    <!-- Robot Visor / Digital HUD Scanner -->
+    <rect x="195" y="210" width="122" height="38" rx="8" fill="#022c22" stroke="#34d399" stroke-width="4" />
+    <circle cx="230" cy="229" r="8" fill="#34d399" />
+    <circle cx="282" cy="229" r="8" fill="#34d399" />
+    <line x1="245" y1="229" x2="267" y2="229" stroke="#6ee7b7" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Tech Circuit & Antenna -->
+    <line x1="256" y1="140" x2="256" y2="95" stroke="#34d399" stroke-width="6" stroke-linecap="round" />
+    <circle cx="256" cy="85" r="12" fill="#10b981" stroke="#a7f3d0" stroke-width="3" />
+
+    <!-- M-Monogram for MTHIKA inside chin -->
+    <path d="M210 320 L210 275 L236 298 L256 280 L276 298 L302 275 L302 320" 
+          fill="none" 
+          stroke="url(#accentGradM)" 
+          stroke-width="8" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  </g>
+</svg>
